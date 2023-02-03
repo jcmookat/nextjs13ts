@@ -22,7 +22,7 @@ export default async function Home() {
 			</Link>
 			<FormPost />
 			{data.map((post) => (
-				<h1>{post.title}</h1>
+				<h1 key={post.id}>{post.title}</h1>
 			))}
 		</main>
 	)
